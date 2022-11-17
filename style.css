@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script|Oswald&display=swap');
 
 :root {
+  --nav-background-color: rgb(255 255 255 / 50%);
+  --text-box-background: rgb(0 0 0 / 50%);
   --primary-color: rgb(255, 92, 92);
   --primary-variant: #ff2d2d;
   --secondary-color: #1b9999;
@@ -12,6 +14,8 @@
 }
 
 [data-theme="dark"] {
+  --nav-background-color: rgb(1 1 1 / 50%);
+  --text-box-background: rgb(255 255 255 / 50%);
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
@@ -63,7 +67,7 @@ nav {
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
-  background: rgb(255 255 255 / 50%);
+  background: var(--nav-background-color);
 }
 
 a {
@@ -160,7 +164,7 @@ button:hover:not(.outline) {
 .text-box {
   width: 40%;
   text-align: justify;
-  background: rgb(0, 0, 0, 0.5);
+  background: var(--text-box-background);
   color: var(--on-primary);
   border-radius: 10px;
   padding: 30px;
